@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-sentinel.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-sentinel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authservice/authservice.iml" filepath="$PROJECT_DIR$/authservice/authservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/authservice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/authservice_main.iml" group="authservice" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/authservice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/authservice_test.iml" group="authservice" />
       <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/configserver_main.iml" filepath="$PROJECT_DIR$/.idea/modules/configserver_main.iml" group="configserver" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/configserver_test.iml" filepath="$PROJECT_DIR$/.idea/modules/configserver_test.iml" group="configserver" />

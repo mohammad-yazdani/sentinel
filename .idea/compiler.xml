@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="authservice_main" target="1.8" />
+      <module name="authservice_test" target="1.8" />
       <module name="configserver_main" target="1.8" />
       <module name="configserver_test" target="1.8" />
       <module name="gatewayapi_main" target="1.8" />
