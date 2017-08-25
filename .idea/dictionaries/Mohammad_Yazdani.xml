@@ -4,6 +4,7 @@
       <w>authservice</w>
       <w>configserver</w>
       <w>gatewayapi</w>
+      <w>helloworld</w>
     </words>
   </dictionary>
 </component>
