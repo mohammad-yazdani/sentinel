@@ -8,6 +8,8 @@
       <module name="configserver_test" target="1.8" />
       <module name="gatewayapi_main" target="1.8" />
       <module name="gatewayapi_test" target="1.8" />
+      <module name="lib_main" target="1.8" />
+      <module name="lib_test" target="1.8" />
       <module name="sentinel_main" target="1.8" />
       <module name="sentinel_test" target="1.8" />
     </bytecodeTargetLevel>

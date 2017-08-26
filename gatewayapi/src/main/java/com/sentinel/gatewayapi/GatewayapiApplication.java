@@ -1,27 +1,21 @@
 package com.sentinel.gatewayapi;
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
-
-import java.util.Arrays;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
+@EnableEurekaClient
+@EnableFeignClients
+@EnableZuulProxy
+@EnableWebMvc
 public class GatewayapiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GatewayapiApplication.class, args);
-	}
-
-	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
-		return args -> {
-
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-
-		};
+		new SpringApplicationBuilder(GatewayapiApplication.class)
+				.run(args);
 	}
 }
