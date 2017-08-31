@@ -18,4 +18,5 @@ include 'services:webservice'
 rootProject.name = 'sentinel'
 include 'lib'
 include 'lib'
+include 'lib'
 

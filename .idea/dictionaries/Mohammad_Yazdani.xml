@@ -5,6 +5,7 @@
       <w>configserver</w>
       <w>gatewayapi</w>
       <w>helloworld</w>
+      <w>priv</w>
     </words>
   </dictionary>
 </component>
