@@ -2,31 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4e34dc6-fbc7-470e-8955-a60efd724e1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_auth0_java_jwt_3_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/authservice.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/configserver.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/gatewayapi.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/RSA/RSATest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/package-info.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/test/JWTTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_jsonwebtoken_jjwt_0_7_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Jwt.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/AuthserviceApplication.class" afterPath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/AuthserviceApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/Config.class" afterPath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/Config.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_simple_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JwtTests.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/out/test/classes/JWTTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JWTTEST.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shared/privateKey" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/shared/publicKey" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/RSA/RSA.class" afterPath="$PROJECT_DIR$/authservice/out/production/classes/com/sentinel/authservice/RSA/RSA.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/out/production/classes/com/sentinel/lib/JWT/Jwt.class" afterPath="$PROJECT_DIR$/lib/out/production/classes/com/sentinel/lib/JWT/Jwt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Mohammad_Yazdani.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Mohammad_Yazdani.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/lib/lib_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/lib/lib_main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/lib/lib_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/lib/lib_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/Config.java" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/Config.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/lib.iml" afterPath="$PROJECT_DIR$/lib/lib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/build.gradle" afterPath="$PROJECT_DIR$/lib/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java" afterPath="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -72,52 +65,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/package-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jwt.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="40" column="70" lean-forward="true" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JWTTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/src/test/JWTTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,6 +79,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>8080</find>
+      <find>loggerfa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1094,18 +1043,18 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6015886470784" />
-        <entry key="$PROJECT_DIR$/authservice" value="3007935539818" />
+        <entry key="$PROJECT_DIR$" value="6016563267380" />
+        <entry key="$PROJECT_DIR$/authservice" value="3008279431996" />
         <entry key="$PROJECT_DIR$/authservice/build.gradle" value="1563844676" />
         <entry key="$PROJECT_DIR$/authservice/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
-        <entry key="$PROJECT_DIR$/configserver" value="3007935539978" />
+        <entry key="$PROJECT_DIR$/configserver" value="3008279432105" />
         <entry key="$PROJECT_DIR$/configserver/build.gradle" value="2589903192" />
         <entry key="$PROJECT_DIR$/configserver/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
-        <entry key="$PROJECT_DIR$/gatewayapi" value="3007935540118" />
+        <entry key="$PROJECT_DIR$/gatewayapi" value="3008279432169" />
         <entry key="$PROJECT_DIR$/gatewayapi/build.gradle" value="3624969134" />
         <entry key="$PROJECT_DIR$/gatewayapi/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
-        <entry key="$PROJECT_DIR$/lib/build.gradle" value="1128423133" />
+        <entry key="$PROJECT_DIR$/lib/build.gradle" value="4086250538" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3453055511" />
       </map>
     </option>
@@ -1839,14 +1788,18 @@
         <option value="$PROJECT_DIR$/gatewayapi/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/lib/src/Services.java" />
         <option value="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/Config.java" />
-        <option value="$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/RSA/RSATest.java" />
-        <option value="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java" />
-        <option value="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java" />
         <option value="$PROJECT_DIR$/lib/pom.xml" />
         <option value="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Jwt.java" />
-        <option value="$PROJECT_DIR$/lib/build.gradle" />
         <option value="$PROJECT_DIR$/lib/src/test/JWTTest.java" />
+        <option value="$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JwtTEST.java" />
+        <option value="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Config.java" />
+        <option value="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Definitions/Paths.java" />
+        <option value="$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/RSA/RSATest.java" />
+        <option value="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java" />
+        <option value="$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java" />
+        <option value="$PROJECT_DIR$/lib/build.gradle" />
         <option value="$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java" />
+        <option value="$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JwtTests.java" />
       </list>
     </option>
   </component>
@@ -1880,7 +1833,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -1892,6 +1844,85 @@
             <path>
               <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
               <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authservice" type="462c0819:PsiDirectoryNode" />
+              <item name="RSA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="authservice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="authservice" type="462c0819:PsiDirectoryNode" />
+              <item name="RSA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1899,6 +1930,40 @@
               <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="JWT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
@@ -1907,10 +1972,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sentinel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sentinel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
@@ -1949,7 +2037,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JWTTest.Simple">
+  <component name="RunManager" selected="JUnit.JwtTests.Private">
     <configuration name="AuthserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sentinel.authservice.AuthserviceApplication" />
@@ -1971,13 +2059,93 @@
       <module name="gatewayapi_main" />
       <envs />
     </configuration>
-    <configuration name="JWTTest.Simple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="JwtTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sentinel.lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="lib_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JWTTest" />
+      <option name="PACKAGE_NAME" value="com.sentinel.lib" />
+      <option name="MAIN_CLASS_NAME" value="com.sentinel.lib.JwtTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/lib" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JwtTests.Private" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sentinel.lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lib_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sentinel.lib" />
+      <option name="MAIN_CLASS_NAME" value="com.sentinel.lib.JwtTests" />
+      <option name="METHOD_NAME" value="Private" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/lib" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JwtTests.Public" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sentinel.lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lib_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sentinel.lib" />
+      <option name="MAIN_CLASS_NAME" value="com.sentinel.lib.JwtTests" />
+      <option name="METHOD_NAME" value="Public" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/lib" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="JwtTests.Simple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sentinel.lib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lib_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sentinel.lib" />
+      <option name="MAIN_CLASS_NAME" value="com.sentinel.lib.JwtTests" />
       <option name="METHOD_NAME" value="Simple" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -2130,48 +2298,31 @@
       <option name="SCRIPT_NAME" value="windows_run.cmd" />
       <option name="PARAMETERS" value="" />
     </configuration>
-    <configuration name="zkServer" type="BatchConfigurationType" factoryName="Batch" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Mohammad Yazdani\IdeaProjects\sentinel\zookeeper\bin" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="IdeaProjects-sentinel" />
-      <option name="SCRIPT_NAME" value="zkServer.cmd" />
-      <option name="PARAMETERS" value="" />
-    </configuration>
-    <configuration name="zkServer.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="C:\WINDOWS\system32\bash.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zookeeper/bin" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zookeeper/bin/zkServer.sh" />
-      <option name="PARAMETERS" value="" />
-      <module name="IdeaProjects-sentinel" />
-      <envs />
-    </configuration>
-    <list size="10">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.AuthserviceApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Bash.system_boot.sh" />
-      <item index="2" class="java.lang.String" itemvalue="Batch.system_boot" />
-      <item index="3" class="java.lang.String" itemvalue="Batch.windows_run" />
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="Bash.system_boot.sh" />
+      <item index="1" class="java.lang.String" itemvalue="Batch.system_boot" />
+      <item index="2" class="java.lang.String" itemvalue="Batch.windows_run" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.AuthserviceApplication" />
       <item index="4" class="java.lang.String" itemvalue="Spring Boot.ConfigserverApplication" />
       <item index="5" class="java.lang.String" itemvalue="Spring Boot.GatewayapiApplication" />
-      <item index="6" class="java.lang.String" itemvalue="Bash.zkServer.sh" />
-      <item index="7" class="java.lang.String" itemvalue="Batch.zkServer" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.RSATest.Simple" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.JWTTest.Simple" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.RSATest.Simple" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.JwtTests.Simple" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.JwtTests" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.JwtTests.Private" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.JwtTests.Public" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JWTTest.Simple" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RSATest.Simple" />
-        <item index="2" class="java.lang.String" itemvalue="Batch.zkServer" />
-        <item index="3" class="java.lang.String" itemvalue="Bash.zkServer.sh" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JwtTests.Private" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JwtTests.Public" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JwtTests.Simple" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RSATest.Simple" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JwtTests" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1503975580209" />
+    <option name="lastUpdateTimestamp" value="1504144120096" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -2197,78 +2348,79 @@
       <workItem from="1503755633834" duration="12857000" />
       <workItem from="1503967863086" duration="11038000" />
       <workItem from="1504137663432" duration="38000" />
+      <workItem from="1504139724076" duration="4787000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 45m 33s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests - 2017.08.30 at 21h 14m 12s.xml">
+      <configuration name="JwtTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 45m 52s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Private - 2017.08.30 at 21h 53m 25s.xml">
+      <configuration name="JwtTests.Private" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 48m 52s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Private - 2017.08.30 at 21h 54m 30s.xml">
+      <configuration name="JwtTests.Private" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 50m 46s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Public - 2017.08.30 at 21h 53m 36s.xml">
+      <configuration name="JwtTests.Public" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 51m 02s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Simple - 2017.08.30 at 21h 23m 56s.xml">
+      <configuration name="JwtTests.Simple" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.28 at 23h 51m 48s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Simple - 2017.08.30 at 21h 45m 49s.xml">
+      <configuration name="JwtTests.Simple" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.29 at 00h 00m 10s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Simple - 2017.08.30 at 21h 48m 49s.xml">
+      <configuration name="JwtTests.Simple" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.29 at 00h 01m 08s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="JwtTests_Simple - 2017.08.30 at 21h 49m 09s.xml">
+      <configuration name="JwtTests.Simple" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.29 at 00h 02m 51s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="RSATest_Simple - 2017.08.30 at 21h 15m 14s.xml">
+      <configuration name="RSATest.Simple" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="JWTTest_Simple - 2017.08.29 at 00h 03m 30s.xml">
-      <configuration name="JWTTest.Simple" configurationId="JUnit" />
+    <history-entry file="RSATest_Simple - 2017.08.30 at 21h 23m 01s.xml">
+      <configuration name="RSATest.Simple" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45666000" />
+    <option name="totallyTimeSpent" value="50453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3735294" sideWeight="0.5046296" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37288135" sideWeight="0.49537036" order="13" side_tool="false" content_ui="combo" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3082627" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33792374" sideWeight="0.49814814" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13802083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37288135" sideWeight="0.49537036" order="13" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37706512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372206" sideWeight="0.49814814" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13802083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838982" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2314,34 +2466,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/HelloController.java" />
-    <entry file="file://$PROJECT_DIR$/system_boot.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_boot.cmd" />
-    <entry file="file://$PROJECT_DIR$/system_boot.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configserver/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="151" column="10" lean-forward="false" selection-start-line="151" selection-start-column="10" selection-end-line="151" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configserver/gradlew.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -2515,20 +2644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/RSA/RSATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authservice/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2546,21 +2661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/AuthserviceApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -2568,10 +2668,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/test/JWTTest.java">
+    <entry file="file://$PROJECT_DIR$/lib/src/test/JWTTest.java" />
+    <entry file="file://$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JwtTEST.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/Definitions/Paths.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/private_key.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/AuthserviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authservice/src/test/java/com/sentinel/authservice/RSA/RSATest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/test/java/com/sentinel/lib/JwtTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2580,11 +2729,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/main/java/com/sentinel/lib/JWT/Jwt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="40" column="70" lean-forward="true" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+        <state relative-caret-position="338">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authservice/src/main/java/com/sentinel/authservice/RSA/RSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -18,9 +18,9 @@ public class AuthserviceApplication {
 
 	@Autowired
 	public AuthserviceApplication() {
-		RSA rsa = RSA.getInstance();
-		if (rsa.GenerateKeyPair()) log.info("RSA key pair generated.");
-		else log.error("Could not generate RSA key pair.");
+		// RSA rsa = RSA.getInstance();
+		// if (rsa.GenerateKeyPair()) log.info("RSA key pair generated.");
+		// else log.error("Could not generate RSA key pair.");
 	}
 
 	public static void main(String[] args) {

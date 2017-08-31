@@ -36,7 +36,7 @@ public class RSA {
     throws IOException {
         try {
 
-            String dirPath = "shared/";
+            String dirPath = "../shared/";
             File dir = new File(dirPath);
             if (dir.mkdir()) log.info("Shared folder created.");
 

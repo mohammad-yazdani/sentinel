@@ -1,69 +1,49 @@
 package com.sentinel.lib.JWT;
 
-import com.auth0.jwt.algorithms.Algorithm;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.commons.io.FileUtils;
 
-import java.io.*;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.File;
+import java.nio.charset.StandardCharsets;
 import java.security.KeyFactory;
-import java.security.NoSuchAlgorithmException;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
-import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
 public class Jwt {
 
-    //private static Logger log = LoggerFactory.getLogger(Jwt.class);
-
     public static RSAPublicKey getPublicKey () throws Exception {
 
-        try {
-            /*InputStream is = new FileInputStream("../shared/publicKey");
-            BufferedReader buf = new BufferedReader(new InputStreamReader(is));
-            String line = buf.readLine();
-            StringBuilder sb = new StringBuilder();
-            while(line != null) {
-                sb.append(line).append("\n");
-                line = buf.readLine();
-            }
-            String fileAsString = sb.toString();
-            System.out.println("Contents : " + fileAsString);*/
+        String publicKeyPEM = FileUtils.readFileToString(new File("../shared/publickey.pem"), StandardCharsets.UTF_8);
 
-            // String publicKeyContent = new String(Files.readAllBytes(Paths.get(ClassLoader.getSystemResource("../shared/publicKey").toURI())));
-            String publicKeyContent = new String(Files.readAllBytes(Paths.get("../shared/publicKey")));
-            System.out.println(publicKeyContent);
-            publicKeyContent = publicKeyContent.replaceAll("\\n", "").replace("-----BEGIN PUBLIC KEY-----", "").replace("-----END PUBLIC KEY-----", "");;
-            KeyFactory kf = KeyFactory.getInstance("RSA");
-            X509EncodedKeySpec keySpecX509 = new X509EncodedKeySpec(Base64.getDecoder().decode(publicKeyContent));
-            RSAPublicKey pubKey = (RSAPublicKey) kf.generatePublic(keySpecX509);
+        // strip of header, footer, newlines, whitespaces
+        publicKeyPEM = publicKeyPEM
+                .replace("-----BEGIN PUBLIC KEY-----", "")
+                .replace("-----END PUBLIC KEY-----", "")
+                .replaceAll("\\s", "");
 
-            System.out.println(pubKey);
-            return pubKey;
-        }
-        catch (Exception e) {
-            //log.error(e.getMessage());
-            throw e;
-        }
-        /*
-        catch (URISyntaxException e) {
-            log.error(e.getMessage());
-        }
-        catch (IOException e) {
-            log.error(e.getMessage());
-        }
-        catch (NoSuchAlgorithmException e) {
-            log.error(e.getMessage());
-        }
-        catch (InvalidKeySpecException e) {
-            log.error(e.getMessage());
-        }
-        */
+        // decode to get the binary DER representation
+        byte[] publicKeyDER = Base64.getDecoder().decode(publicKeyPEM);
+
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        return (RSAPublicKey) keyFactory.generatePublic(new X509EncodedKeySpec(publicKeyDER));
+    }
+
+    public static RSAPrivateKey getPrivateKey () throws Exception {
+        String privateKeyPEM = FileUtils.readFileToString(new File("../shared/privatekey-pkcs8.pem"), StandardCharsets.UTF_8);
+
+        // strip of header, footer, newlines, whitespaces
+        privateKeyPEM = privateKeyPEM
+                .replace("-----BEGIN PRIVATE KEY-----", "")
+                .replace("-----END PRIVATE KEY-----", "")
+                .replaceAll("\\s", "");
+
+        // decode to get the binary DER representation
+        byte[] privateKeyDER = Base64.getDecoder().decode(privateKeyPEM);
+
+        KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+        return (RSAPrivateKey) keyFactory.generatePrivate(new PKCS8EncodedKeySpec(privateKeyDER));
     }
 
 }
