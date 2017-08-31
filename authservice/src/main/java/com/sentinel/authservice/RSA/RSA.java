@@ -18,7 +18,7 @@ public class RSA {
 
     private RSA() {}
 
-    public boolean GenerateKeyPair () {
+    boolean GenerateKeyPair() {
         try {
 
             KeyPair kp = this.makeKeys();

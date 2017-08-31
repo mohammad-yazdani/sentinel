@@ -4,15 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-sentinel.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-sentinel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/authservice.iml" filepath="$PROJECT_DIR$/.idea/modules/authservice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/authservice/authservice.iml" filepath="$PROJECT_DIR$/authservice/authservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/authservice_main.iml" filepath="$PROJECT_DIR$/.idea/modules/authservice_main.iml" group="authservice" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/authservice_test.iml" filepath="$PROJECT_DIR$/.idea/modules/authservice_test.iml" group="authservice" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/configserver.iml" filepath="$PROJECT_DIR$/.idea/modules/configserver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/configserver_main.iml" filepath="$PROJECT_DIR$/.idea/modules/configserver_main.iml" group="configserver" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/configserver_test.iml" filepath="$PROJECT_DIR$/.idea/modules/configserver_test.iml" group="configserver" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gatewayapi.iml" filepath="$PROJECT_DIR$/.idea/modules/gatewayapi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gatewayapi/gatewayapi.iml" filepath="$PROJECT_DIR$/gatewayapi/gatewayapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gatewayapi_main.iml" filepath="$PROJECT_DIR$/.idea/modules/gatewayapi_main.iml" group="gatewayapi" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gatewayapi_test.iml" filepath="$PROJECT_DIR$/.idea/modules/gatewayapi_test.iml" group="gatewayapi" />
       <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" group="lib" />

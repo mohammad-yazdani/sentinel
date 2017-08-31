@@ -7,9 +7,9 @@ import org.junit.Test;
 public class JwtTests {
 
     @Test
-    public void Public () {
+    public void Generate () {
         try {
-            System.out.println(Jwt.getPublicKey());
+            System.out.println(Jwt.generateToken());
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
@@ -17,9 +17,10 @@ public class JwtTests {
     }
 
     @Test
-    public void Private () {
+    public void Verify () {
         try {
-            System.out.println(Jwt.getPrivateKey());
+
+            System.out.println(Jwt.verifyToken(Jwt.generateToken()));
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
