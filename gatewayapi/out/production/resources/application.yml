@@ -4,6 +4,14 @@ eureka:
       defaultZone: ${vcap.services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
       healthcheck:
         enabled: true
+    registryFetchIntervalSeconds: 1
+    instanceInfoReplicationIntervalSeconds: 1
+    initialInstanceInfoReplicationIntervalSeconds: 1
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 1
+    metadataMap:
+      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${random.value}}}
 ---
 spring:
   profiles: cloud
@@ -11,3 +19,9 @@ eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
     nonSecurePort: 82
+---
+zuul:
+  routes:
+    resource:
+      path: /auth/**
+      url: http://localhost:8081
