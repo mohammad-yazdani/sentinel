@@ -1,4 +1,4 @@
-package com.sentinel.gatewayapi;
+package com.sentinel.gatewayapi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMethod;
