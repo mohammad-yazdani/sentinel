@@ -2,31 +2,35 @@ package com.sentinel.authservice.DAO;
 
 
 import com.sentinel.authservice.model.User;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.websocket.Session;
 import java.util.ArrayList;
 
-public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
+@Repository
+@Transactional
+public class UserDAOImpl implements UserDAO {
+
+    @Autowired
+    SessionFactory sessionFactory;
+
     @Override
     public boolean save(User user) {
-        return (boolean) getHibernateTemplate().save(user);
+        Session session = sessionFactory.getCurrentSession();
     }
 
     @Override
     public boolean update(User user) {
-        getHibernateTemplate().update(user);
-        return true;
     }
 
     @Override
     public boolean delete(User user) {
-        getHibernateTemplate().delete(user);
-        return true;
     }
 
     @Override
     public User findByUsername(String username) {
-        return null;
-        //return getHibernateTemplate();
     }
 
     @Override
