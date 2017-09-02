@@ -1,5 +1,7 @@
 package com.sentinel.authservice;
 
+import com.sentinel.authservice.DAO.UserDAO;
+import com.sentinel.authservice.DAO.UserDAOImpl;
 import com.sentinel.authservice.RSA.RSA;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,4 +13,7 @@ public class Config {
     public RSA rsa () {
         return RSA.getInstance();
     }
+
+    @Bean
+    public UserDAO userDAO () { return new UserDAOImpl(); }
 }
