@@ -26,11 +26,13 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.cloud:spring-cloud-netflix-eureka-server:1.3.4.RELEASE')
 	compile('org.springframework.cloud:spring-cloud-starter-feign:1.3.4.RELEASE')
+	compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
 	compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-hystrix', version: '1.3.4.RELEASE'
 	compile group: 'org.springframework', name: 'spring-tx', version: '4.3.10.RELEASE'
 	compile group: 'org.springframework', name: 'spring-orm', version: '4.3.10.RELEASE'
 	compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.10.RELEASE'
 	compile group: 'org.apache.tomcat', name: 'tomcat-dbcp', version: '8.5.20'
+	compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
 	compile('org.springframework.cloud:spring-cloud-dependencies:Dalston.SR3')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

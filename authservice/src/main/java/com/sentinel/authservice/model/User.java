@@ -1,5 +1,7 @@
 package com.sentinel.authservice.model;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 import javax.persistence.Column;
@@ -11,6 +13,8 @@ import java.util.Date;
 
 @Entity(name = "user")
 public class User implements Serializable {
+
+    private static Logger log = LoggerFactory.getLogger(User.class);
 
     @Id
     @Column(name = "username")
@@ -29,7 +33,9 @@ public class User implements Serializable {
         if (username != null) this.username = username;
         else this.username = email;
         this.email = email;
-        this.dateRegistered = new Timestamp(dateRegistered.getTime());
+        // this.dateRegistered = new Timestamp(dateRegistered.getTime()); TODO : FIX LATER
+        this.dateRegistered = new Date();
+        log.warn("PRE CRYPT");
         this.auth = BCrypt.hashpw(password, BCrypt.gensalt());
     }
 
