@@ -35,7 +35,6 @@ public class User implements Serializable {
         this.email = email;
         // this.dateRegistered = new Timestamp(dateRegistered.getTime()); TODO : FIX LATER
         this.dateRegistered = new Date();
-        log.warn("PRE CRYPT");
         this.auth = BCrypt.hashpw(password, BCrypt.gensalt());
     }
 

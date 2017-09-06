@@ -1,6 +1,5 @@
 package com.sentinel.gatewayapi.filter;
 
-import com.sentinel.lib.JWT.Jwt;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
