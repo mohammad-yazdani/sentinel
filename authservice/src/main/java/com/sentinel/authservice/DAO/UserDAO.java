@@ -5,9 +5,10 @@ import com.sentinel.authservice.model.User;
 import java.util.ArrayList;
 
 public interface UserDAO {
-    boolean save (User user);
 
-    boolean delete(User user);
+    void save (User user);
+
+    void delete(User user);
 
     User findByUsername (String username);
 

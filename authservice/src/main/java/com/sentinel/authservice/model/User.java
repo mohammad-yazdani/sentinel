@@ -7,11 +7,13 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Date;
 
-@Entity(name = "user")
+@Entity
+@Table(name = "user")
 public class User implements Serializable {
 
     private static Logger log = LoggerFactory.getLogger(User.class);

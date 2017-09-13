@@ -16,19 +16,27 @@ public class BasicAuth {
 
     private static Logger log = LoggerFactory.getLogger(BasicAuth.class);
 
-    @Autowired
+    private final
     UserDAO userDAO;
+
+    @Autowired
+    public BasicAuth(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
 
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public ResponseEntity login (@RequestHeader("username") String username,
                                  @RequestHeader("password") String password) {
 
-        log.info("User " + username + " trying to enter with pass " + password + ".");
+        // TODO : Authenticate
 
-        return null;
+        User user = userDAO.findByUsername(username);
+        log.info(user.toString());
+
+        return ResponseEntity.ok(user);
     }
 
-    @RequestMapping(value = "register", method = RequestMethod.GET)
+    @RequestMapping(value = "register", method = RequestMethod.POST)
     public ResponseEntity register (@RequestHeader("username") String username,
                                     @RequestHeader("email") String email,
                                     @RequestHeader("password") String password) {
@@ -36,10 +44,13 @@ public class BasicAuth {
         log.info("Register with username: " + username + " email: " + email + " password: " + password);
         try {
             User user = new User(username, email, password);
-            if (userDAO.save(user)) {
+            try {
+                userDAO.save(user);
                 return ResponseEntity.ok("User created.");
             }
-            else {
+            catch (Exception e) {
+                log.error(e.getMessage());
+                e.getStackTrace();
                 return ResponseEntity.badRequest().body("User creation failed.");
             }
         }
