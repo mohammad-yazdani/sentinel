@@ -1,6 +1,6 @@
 package com.sentinel.authservice;
 
-import com.sentinel.authservice.RSA.RSA;
+import com.sentinel.authservice.service.RSA.RSA;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

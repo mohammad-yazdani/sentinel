@@ -1,4 +1,4 @@
-package com.sentinel.authservice.RSA;
+package com.sentinel.authservice.service.RSA;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

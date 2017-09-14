@@ -2,7 +2,7 @@ package com.sentinel.authservice;
 
 import com.sentinel.authservice.DAO.UserDAO;
 import com.sentinel.authservice.DAO.UserDAOImpl;
-import com.sentinel.authservice.RSA.RSA;
+import com.sentinel.authservice.service.RSA.RSA;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
