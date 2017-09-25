@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import com.sentinel.lib.JWT;
+// import com.sentinel.lib.JWT;
 
 @RestController
 public class BasicAuth {
@@ -38,7 +38,7 @@ public class BasicAuth {
         User user = userDAO.findByUsername(username);
 
         if (BCrypt.checkpw(password, user.getAuth())) {
-            String jwt = ;
+            String jwt = "test jwt";
             HttpHeaders responseHeaders = new HttpHeaders();
             responseHeaders.set("jwt", jwt);
             return new ResponseEntity<>(user.toString(), responseHeaders, HttpStatus.ACCEPTED);
