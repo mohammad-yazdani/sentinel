@@ -2,6 +2,7 @@ package com.sentinel.authservice.controller;
 
 import com.sentinel.authservice.DAO.UserDAO;
 import com.sentinel.authservice.model.User;
+import com.sentinel.lib.JWT.Jwt;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,10 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-// import com.sentinel.lib.JWT;
+
+import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 
 @RestController
 public class BasicAuth {
@@ -28,26 +32,28 @@ public class BasicAuth {
         this.userDAO = userDAO;
     }
 
-    @RequestMapping(value = "login", method = RequestMethod.GET)
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ResponseEntity login (@RequestHeader("username") String username,
                                  @RequestHeader("password") String password) {
 
-        // TODO : Authenticate
-        // TODO : Implement salted-hash passwords
-
         User user = userDAO.findByUsername(username);
-
+        if (user == null) return new ResponseEntity<>(false, HttpStatus.NOT_FOUND);
         if (BCrypt.checkpw(password, user.getAuth())) {
-            String jwt = "test jwt";
+            String jwt = null;
+            try {
+                jwt = Jwt.generateToken(user.getUsername());
+            } catch (NoSuchAlgorithmException | IOException | InvalidKeySpecException e) {
+                log.error(e.getMessage());
+            }
             HttpHeaders responseHeaders = new HttpHeaders();
             responseHeaders.set("jwt", jwt);
-            return new ResponseEntity<>(user.toString(), responseHeaders, HttpStatus.ACCEPTED);
+            return new ResponseEntity<>(true, responseHeaders, HttpStatus.ACCEPTED);
         }
         else return ResponseEntity.badRequest()
                 .body("Wrong password!");
     }
 
-    @RequestMapping(value = "register", method = RequestMethod.POST)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResponseEntity register (@RequestHeader("username") String username,
                                     @RequestHeader("email") String email,
                                     @RequestHeader("password") String password) {
