@@ -19,6 +19,8 @@ Sentinel is the backend for PTime mobile app. To run the project please ensure y
 To get the developement environment running, please follow these steps:
 #### Database configuration
 - TODO MySQL
+  ##### For authservice database run:
+  `CREATE DATABASE auth; USE auth; GRANT ALL PRIVILEGES ON auth.* TO 'auth'@'localhost' IDENTIFIED BY "auth";`
 - TODO NoSQL
 #### Microservices
 - TODO Script to run all services on Linux/Windows
