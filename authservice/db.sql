@@ -1,0 +1,1 @@
+CREATE DATABASE auth; USE auth; GRANT ALL PRIVILEGES ON auth.* TO "auth"@"localhost" IDENTIFIED BY "auth";

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
@@ -32,6 +33,7 @@ public class BasicAuth {
         this.userDAO = userDAO;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ResponseEntity login (@RequestHeader("username") String username,
                                  @RequestHeader("password") String password) {
@@ -46,6 +48,7 @@ public class BasicAuth {
                 log.error(e.getMessage());
             }
             HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set("Access-Control-Expose-Headers", "jwt");
             responseHeaders.set("jwt", jwt);
             return new ResponseEntity<>(true, responseHeaders, HttpStatus.ACCEPTED);
         }
@@ -53,6 +56,7 @@ public class BasicAuth {
                 .body("Wrong password!");
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResponseEntity register (@RequestHeader("username") String username,
                                     @RequestHeader("email") String email,
@@ -76,6 +80,7 @@ public class BasicAuth {
         }
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/intercept", method = RequestMethod.GET)
     public ResponseEntity intercept (@RequestHeader("token") String token) {
         try {
