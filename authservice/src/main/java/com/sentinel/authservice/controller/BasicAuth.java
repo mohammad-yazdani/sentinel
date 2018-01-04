@@ -75,4 +75,16 @@ public class BasicAuth {
             return ResponseEntity.badRequest().body("User creation failed.");
         }
     }
+
+    @RequestMapping(value = "/intercept", method = RequestMethod.GET)
+    public ResponseEntity intercept (@RequestHeader("token") String token) {
+        try {
+            HttpHeaders responseHeaders = new HttpHeaders();
+            responseHeaders.set("jwt", Jwt.verifyToken(token).getToken());
+            return new ResponseEntity<>(true, responseHeaders, HttpStatus.ACCEPTED);
+        } catch (IOException | NoSuchAlgorithmException | InvalidKeySpecException e) {
+            e.printStackTrace();
+            return ResponseEntity.badRequest().body("Invalid token.");
+        }
+    }
 }
